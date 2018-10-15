@@ -17,5 +17,9 @@ python3 circleci-manage-env-vars.py --token 5842f69d00e237f7acirclecitoken838c25
 You are welcome!
 
 ## Note!
-Will only update project that user with the provided token is following. This is how CircleCI API works - if you know another way of getting all projects for org then please reach out to create an issue
+Will only update projects that user with the provided token is following. This is how CircleCI API works - if you know another way of getting all projects for org then please reach out to create an issue
 Also, docopt, that is used for parsing args, is sensetive to the order of arguments so please specify arguments in the order as shown above
+
+## P.S.
+
+Another way of working out this issue is to make use of CircleCI [contexts](https://circleci.com/docs/2.0/contexts/)
