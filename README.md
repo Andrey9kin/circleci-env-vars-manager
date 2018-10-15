@@ -2,6 +2,11 @@
 
 A small tool to manage a huge headache. Think you exposed a secret that is provided as an environment variable and now need to change it in all projects... This is how you do it
 ```
+# a little bit of preparations - install all deps as virualenv and activate it
+bash -e setup.sh
+source env/bin/activate
+```
+```
 # will only update projects that have SCREWED_VAR variable
 python3 circleci-manage-env-vars.py --token 5842f69d00e237f7acirclecitoken838c25b3cd2cef --action update --name SCREWED_VAR --value SOME_NEW_VALUE
 ```
